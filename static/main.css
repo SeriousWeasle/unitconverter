@@ -1,5 +1,12 @@
 body {
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 #logo {
@@ -17,22 +24,39 @@ body {
     flex-direction: row;
 
     font-size: 32px;
-
-    background-color: red;
 }
 
 .SelectorBarItem {
     /*Size of the selector bar items*/
-    width: 126px;
-    height: 63px;
+    width: 128px;
+    height: 64px;
 
     /*Align text to center*/
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    background-color: blue;
-    border-left: 1px solid purple;
-    border-right: 1px solid orange;
-    border-bottom: 1px solid gray;
+#converterContainer {
+    width: 1280px;
+    height: 720px;
+
+    background-color: red;
+}
+
+#distconverter {
+    width: 1280px;
+    height: 720px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.input-container, .output-container{
+    width: 640px;
+    height: 720px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

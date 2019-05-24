@@ -12,22 +12,44 @@
         <!--The type selector bar, switches between converters-->
         <div id="typeSelectorBar">
             <div id="logo">
-                <img src="./static/img/creator_avatar.gif" width="64" height="64" title="Made by SeriousWeasle">
+                <a href="https://github.com/SeriousWeasle">
+                    <img src="./static/img/creator_avatar.gif" width="64" height="64" title="Made by SeriousWeasle">
+                </a>
             </div>
-            <div class="SelectorBarItem">
+            <div class="SelectorBarItem" onclick="switchConverter('dist')">
                 Distance
             </div>
-            <div class="SelectorBarItem">
+            <div class="SelectorBarItem" onclick="switchConverter('mass')">
                 Mass
             </div>
-            <div class="SelectorBarItem">
+            <div class="SelectorBarItem" onclick="switchConverter('time')">
                 Time
+            </div>
+            <div class="SelectorBarItem" onclick="switchConverter('vel')">
+                Velocity
             </div>
         </div>
 
         <!--Converter, takes in data and spits out other data-->
         <div id="converterContainer">
-
+            <div id="distconverter">
+                <div class="input-container">
+                    <input type="number" id="dist_input"/>
+                    <select id="dist_mult_in" class="mult_dropdown">
+                    </select>
+                    <select id="dist_unit_in">
+                        <option>meter</option>
+                        <option>banana</option>
+                    </select>
+                </div>
+                <div class="output-container">
+                    <div id="dist_out">100</div>
+                    <select id="dist_mult_out" class="mult_dropdown">
+                    </select>
+                    <select id="dist_unit_out">
+                    </select>
+                </div>
+            </div>
         </div>
     </body>
     <script src="./static/client.js"></script>
