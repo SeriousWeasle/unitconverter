@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+}
+
+#logo {
+    width: 64px;
+    height: 64px;
+}
+
+#typeSelectorBar {
+    /*Determine size*/
+    width: 100vw;
+    height: 64px;
+
+    /*Determine layout*/
+    display: flex;
+    flex-direction: row;
+
+    font-size: 32px;
+
+    background-color: red;
+}
+
+.SelectorBarItem {
+    /*Size of the selector bar items*/
+    width: 126px;
+    height: 63px;
+
+    /*Align text to center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blue;
+    border-left: 1px solid purple;
+    border-right: 1px solid orange;
+    border-bottom: 1px solid gray;
+}

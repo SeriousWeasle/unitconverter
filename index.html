@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./static/main.css'>
+        <script src='/socket.io/socket.io.js'></script>
+    </head>
+    <body>
+        <!--The type selector bar, switches between converters-->
+        <div id="typeSelectorBar">
+            <div id="logo">
+                <img src="./static/img/creator_avatar.gif" width="64" height="64" title="Made by SeriousWeasle">
+            </div>
+            <div class="SelectorBarItem">
+                Distance
+            </div>
+            <div class="SelectorBarItem">
+                Mass
+            </div>
+            <div class="SelectorBarItem">
+                Time
+            </div>
+        </div>
+
+        <!--Converter, takes in data and spits out other data-->
+        <div id="converterContainer">
+
+        </div>
+    </body>
+    <script src="./static/client.js"></script>
+</html>
